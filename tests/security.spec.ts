@@ -37,5 +37,9 @@ test.describe('Admin Users Page Tests', () => {
     await expect(adminUsersPage.page).toHaveURL(/currencies.html/);
   });
 
+  test('TC-SEC-11: Check Home Page Access', async () => {
+    await adminUsersPage.navHome.click();
+    await expect(adminUsersPage.page).toHaveURL(/index.html/);
+  });
 
 });
