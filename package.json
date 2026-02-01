@@ -1,0 +1,23 @@
+{
+  "name": "jobsity_testing",
+  "version": "1.0.0",
+  "description": "- **Node.js**: Version 18 or higher.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduardokezada/jobsity_testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/eduardokezada/jobsity_testing/issues"
+  },
+  "homepage": "https://github.com/eduardokezada/jobsity_testing#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.58.1",
+    "@types/node": "^25.1.0"
+  }
+}
