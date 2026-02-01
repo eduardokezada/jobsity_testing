@@ -43,11 +43,11 @@ test.describe('Zero WebApp Security - Functional & Responsive Suite', () => {
   /**
    * @requirement Layout must adapt to mobile device screens
    */
-  test('TC-RESP-03: Mobile Hamburger Menu', async ({ page, isMobile }) => { 
+  test('TC-RESP-03: Mobile Search Bar', async ({ page, isMobile }) => { 
     test.skip(!isMobile, 'This test is specific to mobile viewports');
     
-    const hamburgerMenu = page.locator('.btn-navbar');
-    await expect(hamburgerMenu).toBeVisible(); 
+    const searchBar = page.getByPlaceholder('Search');
+    await expect(searchBar).toBeVisible(); 
   });
 
   /**

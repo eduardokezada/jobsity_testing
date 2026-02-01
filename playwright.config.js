@@ -11,15 +11,24 @@ export default defineConfig({
 
   use: {
     baseURL: 'http://zero.webappsecurity.com',
-    ignoreHTTPSErrors: true, // Critical for this test suite since its designed for penetration testing
+    ignoreHTTPSErrors: true, // Critical for this test suite since the URL is designed to have these.
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
   },
 
   projects: [
     {
-      name: 'chromium',
+      name: 'Chromium',
       use: { ...devices['Desktop Chrome'] },
     },
+    
+    {
+      name: 'Chromium Mobile',
+      use: { 
+        ...devices['Pixel 9'],
+        isMobile: true
+      },
+    }
+    
   ],
 });
