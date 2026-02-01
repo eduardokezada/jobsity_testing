@@ -12,7 +12,7 @@ export default defineConfig({
   use: {
     baseURL: 'http://zero.webappsecurity.com',
     ignoreHTTPSErrors: true, // Critical for this test suite since the URL is designed to have these.
-    trace: 'on-first-retry',
+    trace: 'on',
     screenshot: 'only-on-failure',
   },
 

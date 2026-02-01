@@ -7,9 +7,15 @@
 ## Setup
 1. Clone or unzip the repository.
 2. Open your terminal in the root folder and run:
-   ```bash
+   
    npm install
    npx playwright install --with-deps
+
+## Reporting
+Run the following command to open the playwright trace viewer locally 
+   
+   npx playwright show-trace show-report
+
 
 ## Project Structure
 /Jobsity_Testing
@@ -24,3 +30,5 @@
 │   └── LoginPage.ts
 ├── package.json
 └── README.md                     # Setup & Execution Guide
+
+
