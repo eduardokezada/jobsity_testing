@@ -58,4 +58,4 @@ Manages browser settings (Chromium, Firefox, WebKit), execution environment (bas
 After test execution, you can view the detailed HTML report by running:
     ```bash
     npx playwright show-report
-
+    ```
