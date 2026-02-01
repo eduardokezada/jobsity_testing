@@ -13,3 +13,6 @@ It is designed to be cross-browser compatible and highly maintainable.
    ```bash
    npm install
    npx playwright install --with-deps
+
+## Reporting
+To view the playwright report simply run npx playwright show-report to open the trace.
